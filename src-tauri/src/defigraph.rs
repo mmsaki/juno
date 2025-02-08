@@ -23,7 +23,7 @@ pub async fn run(num: &str, uniswap_version: &str) -> Value {
         "v4" => {
             subgraph_id = "6XvRX3WHSvzBVTiPdF66XSBVbxWuHqijWANbjJxRDyzr".to_string();
             query = format!(
-                r#"{{ pools(first: {}) {{ id poolId currency0 currency1 fee hooks sqrtPriceX96 tick tickSpacing }} }}"#,
+                r#"{{ pools(first: {}) {{ id poolId currency0 currency1 fee hooks sqrtPriceX96 tick tickSpacing blockNumber }} }}"#,
                 num
             );
         }
