@@ -9,14 +9,20 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_3ebe64a4574a793"
   },
   "dependencies": {
+    "@privy-io/react-auth": "^2.4.2",
+    "@storybook/addon-a11y": "^8.5.3",
     "@tailwindcss/vite": "^4.0.3",
     "@tanstack/react-query": "^5.66.0",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
+    "bits-ui": "^0.22.0",
+    "chromatic": "^11.25.2",
     "connectkit": "^1.8.2",
+    "framer-motion": "^11.3.24",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "storybook": "^8.5.3",
@@ -26,6 +32,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-designs": "^8.1.0",
     "@storybook/addon-essentials": "^8.5.3",
     "@storybook/addon-interactions": "^8.5.3",
     "@storybook/addon-onboarding": "^8.5.3",
