@@ -8,8 +8,6 @@ import React, {
 } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 
-// import "./Stepper.css";
-
 interface StepperProps extends HTMLAttributes<HTMLDivElement> {
 	children: ReactNode;
 	initialStep?: number;
