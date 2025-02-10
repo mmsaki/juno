@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../Header";
-import Overlay from "../Overlay";
+import Overlay from "./overlay";
 
 export interface CanvasProps {}
 
@@ -13,7 +13,9 @@ export default function CanvasLeft({}: CanvasProps) {
 	return (
 		<section className="min-w-64">
 			<div className="flex grow">
-				<Overlay />
+				<Overlay name="" />
+			</div>
+			<div className="border w-full h-full">
 				<Header
 					user={user}
 					onLogin={() => setUser({ name: "Jane Doe" })}
@@ -21,7 +23,6 @@ export default function CanvasLeft({}: CanvasProps) {
 					onCreateAccount={() => setUser({ name: "Jane Doe" })}
 				/>
 			</div>
-			<div className="border bg-gray-300 w-full h-full"></div>
 		</section>
 	);
 }
