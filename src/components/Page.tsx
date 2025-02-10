@@ -10,7 +10,7 @@ export const Page: React.FC = () => {
 		<div className="flex h-[calc(100vh-24px)]">
 			{!isIOS && <CanvasLeft />}
 			<Canvas />
-			{!isIOS &&<CanvasRight />}
+			{!isIOS && <CanvasRight />}
 		</div>
 	);
 };
