@@ -5,7 +5,7 @@ import TheGraphFrom from "../TheGraphForm";
 export default function Canvas() {
 	return (
 		<section className="w-full">
-			<Overlay name="Juno Liquidity Manager" />
+			<Overlay title="Juno Liquidity Manager" />
 			<div className="border-t h-full overflow-hidden overflow-y-auto">
 				<h1 className="font-black text-2xl">Launch Token</h1>
 				<p>Launch an ERC20 token</p>

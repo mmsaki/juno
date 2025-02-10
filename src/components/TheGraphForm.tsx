@@ -116,7 +116,7 @@ export default function TheGraphFrom() {
 							ease: ["easeIn", "easeOut"],
 						},
 					}}
-					transition={{ type: "spring", duration: .1 }}
+					transition={{ type: "spring", duration: 0.1 }}
 					exit={{ opacity: 0 }}
 					className="overflow-auto text-blue-500"
 				>

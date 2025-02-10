@@ -13,7 +13,7 @@ export default function CanvasLeft({}: CanvasProps) {
 	return (
 		<section className="min-w-64">
 			<div className="flex grow">
-				<Overlay name="" />
+				<Overlay title="" />
 			</div>
 			<div className="border w-full h-full">
 				<Header
