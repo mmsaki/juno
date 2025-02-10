@@ -23,13 +23,15 @@ export const Header = ({
 		<header>
 			<div className="h-4 justify-between align-middle">
 				{user ? (
-					<div className="flex flex-nowrap flex-none space-x-1">
-						<span className="flex flex-row">Welcome, {user.name}!</span>
+					<div className="space-x-1">
+						<div className="flex flex-nowrap text-nowrap">
+							Welcome, {user.name}!
+						</div>
 						<Button size="sm" onClick={onLogout} label="Logout" />
 					</div>
 				) : (
-					<div className="flex flex-nowrap flex-none space-x-1">
-						<Button size="sm" onClick={login} label="Login" />
+					<div className="grid space-x-1">
+						<Button size="sm" onClick={onLogin} label="Login" />
 						<Button
 							primary
 							size="sm"
