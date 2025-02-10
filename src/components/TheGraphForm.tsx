@@ -1,7 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 import { useState } from "react";
 import { Button } from "./Button";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Stepper, { Step } from "./Stepper";
 
 export default function TheGraphFrom() {
@@ -105,7 +105,24 @@ export default function TheGraphFrom() {
 					</Step>
 				</Stepper>
 			</motion.form>
-			<p className="overflow-auto text-blue-500">{greetMsg}</p>
+			<AnimatePresence mode="popLayout">
+				<motion.div
+					whileInView={{ opacity: 1 }}
+					layout
+					animate={{
+						transition: {
+							duration: 8,
+							delay: 0.5,
+							ease: ["easeIn", "easeOut"],
+						},
+					}}
+					transition={{ type: "spring", duration: .1 }}
+					exit={{ opacity: 0 }}
+					className="overflow-auto text-blue-500"
+				>
+					{greetMsg}
+				</motion.div>
+			</AnimatePresence>
 		</div>
 	);
 }
